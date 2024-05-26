@@ -1,13 +1,9 @@
 config:
-  aws:profile: pulumi
-  aws:region: eu-west-1
-  aws_etl_pipeline:aws_account_id: "055287738778"
-  aws_etl_pipeline:environment: development
-  aws_etl_pipeline:s3_bucket_name: data-lake-costumers
-  aws_etl_pipeline:output_bucket_name: customers-output-bucket
-  aws_etl_pipeline:scripts_bucket_name: scripts-lambdas-glue-jobs
-  aws_etl_pipeline:aws_glue_database_name: metadata_db
-  aws_etl_pipeline:snowflake_account: pipcqon-dm41474
-  aws_etl_pipeline:snowflake_password:
-    secure: AAABAJEeNyP+75HFHM+TJoZF1+gL3Xt7zwkskYR8FnBahi5UUNqvrS4WHVbD4BEY2Q==
-  aws_etl_pipeline:snowflake_user: abeltavares
+  aws:region: "aws-region"
+  aws_account_id: "aws-account-id"
+  snowflake_account: "your-snowflake-account"
+  snowflake_user: "your-snowflake-user"
+  snowflake_password: "your-snowflake-password"
+  aws_etl_pipeline:s3_bucket_name: "name-you-want-for-data-lake-bucket"
+  aws_etl_pipeline:output_bucket_name: "name-you-want-for-output-bucket"
+  aws_etl_pipeline:scripts_bucket_name: "name you want for scripts bucket"
